@@ -3,9 +3,9 @@
 var mysql = require("mysql");
 // var inquirer = require("inquirer");
 // var Table = require("easy-table");
-var Table = require("cli-table");
+// var Table = require("cli-table");
 
-var ourTable = new Table();
+// var ourTable = new Table();
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -42,9 +42,9 @@ function start(){
 
 
 //Pulls inventory list into pretty table
-//var Table = require("cli-table");
+var Table = require("cli-table");
 
-//var ourTable = new Table();
+var ourTable = new Table();
 
 function displayResults(results){
    var ourTable = new Table({
